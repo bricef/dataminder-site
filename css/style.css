@@ -78,7 +78,7 @@ text-shadow: rgba(255,255,255,0.4) 1px 1px 2px; background: url(images/slider-bt
 
 /* content */
 .content { width: 678px; float: left; padding-left: 3px; margin-top:30px; }
-.content h4 { padding-bottom: 25px; }
+.content h4 { padding-top:20px; padding-bottom: 15px; }
 .content p { padding-bottom: 20px; }
 .content p:last-child { padding-bottom: 0; }
 .content .box { background: url(images/box.png) repeat 0 0; padding: 20px 30px 20px 27px; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; -o-border-radius: 4px; }
