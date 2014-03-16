@@ -67,7 +67,7 @@ text-shadow: rgba(255,255,255,0.4) 1px 1px 2px; background: url(images/slider-bt
 
 /* cols */
 .cols { padding-bottom: 36px; }
-.cols .col { width: 215px; float: left; }
+.cols .col { width: 400px; float: left; }
 .cols .col + .col { padding-left: 20px; }
 .cols .col a img { background: url(images/bg-img.png) repeat 0 0; padding: 9px 0 10px; border-top: 1px solid #6e6e6e; margin-bottom: 8px; }
 .cols .col h4 { line-height: 19px; padding-bottom: 14px; }
