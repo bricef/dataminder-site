@@ -399,6 +399,29 @@
       }
     </script>
 
+
+     <script type="text/javascript">
+
+       google.load('visualization', '1', {'packages':['motionchart']});
+       google.setOnLoadCallback(drawChart);
+     function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Store');
+       data.addColumn('date', 'Date');
+         data.addColumn('number', 'Footfall');
+        data.addColumn('number', 'Complaint Rate per 1000');
+        data.addRows(Datagen.rows);
+        var options = {};
+        options['state'] = '{"yAxisOption":"3","dimensions":{"iconDimensions":["dim0"]},"xZoomedDataMin":18,"yZoomedDataMin":1,"xZoomedDataMax":2980,"yZoomedIn":false,"iconType":"BUBBLE","nonSelectedAlpha":0.4,"colorOption":"3","yLambda":1,"time":"2010","playDuration":40000,"xAxisOption":"2","showTrails":true,"orderedByY":false,"xLambda":1,"iconKeySettings":[],"duration":{"multiplier":1,"timeUnit":"D"},"xZoomedIn":false,"uniColorForNonSelected":false,"sizeOption":"_UNISIZE","orderedByX":false,"yZoomedDataMax":200}';
+         options['width'] = 600;
+         options['height'] = 400; 
+         chart = new google.visualization.MotionChart(
+            document.getElementById('chart_div2')
+        );
+        chart.draw(data, options);
+      }
+ 
+    </script> 
 </head>
 <body>
 	<!-- wrapper -->
@@ -488,7 +511,7 @@
 					</div>-->
 					<div class="col">
 						<h4><a href="#">Case Study: Pharmacies   </a></h4>
-						<a href="#"><img src="css/images/col-img3.png" alt="" /></a>
+						<div id="chart_div2" style=" width: 400px; height: 300px;"></div>
 						<p>Lorem ipsum dolor sit amet, commodo ligula eget dolor. Aenean massa.Sociis natoque penatibus... </p>
 					</div>
 				<!--	<div class="col">
